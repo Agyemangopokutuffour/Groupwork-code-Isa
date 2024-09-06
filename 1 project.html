@@ -4,13 +4,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Scrample</title>
     <link rel="stylesheet" href="style1.css">
-    <script src="word.js"></script>
-    <script src="main.js"></script>
+    <script src="words.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
  <div class="container">
-    <h2>Word Scramble Game</h2>
-   <center><div class="startArea" onclick="start()"><button class="startBtn">Start Game</button></div></center>
+    <!--This section shows the play button-->
+    <h2 style="text-align:center;">Word Scramble Game</h2>
+   <center><div class="startArea" onclick="start()">
+    <button class="startBtn">Start Game</button>
+    </div></center>
 
     <div class="content">
         <p class="word"></p>
@@ -28,7 +31,7 @@
     </div>
  </div> 
  
- <!--modal-->
+ <!--modal used to display the game state-->
  <div id="myModal" class="modal">
  <!--Modal content-->
    <div class="modal-content">
